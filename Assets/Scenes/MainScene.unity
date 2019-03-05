@@ -156,59 +156,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: aa992ce3451dbd840b687364d5144303, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  maxDragVelocity: 1
-  dragStrength: 20
-  velocityChangeRate: 5000
-  decayRate: 300
-  maxVelocity: 300
-  dragStrengthCurve:
-    serializedVersion: 2
-    m_Curve:
-    - serializedVersion: 3
-      time: 0
-      value: 0
-      inSlope: 1
-      outSlope: 1
-      tangentMode: 34
-      weightedMode: 0
-      inWeight: 0
-      outWeight: 0
-    - serializedVersion: 3
-      time: 1
-      value: 1
-      inSlope: 1
-      outSlope: 1
-      tangentMode: 34
-      weightedMode: 0
-      inWeight: 0
-      outWeight: 0
-    m_PreInfinity: 2
-    m_PostInfinity: 2
-    m_RotationOrder: 4
-  decayRateCurve:
-    serializedVersion: 2
-    m_Curve:
-    - serializedVersion: 3
-      time: 0
-      value: 0
-      inSlope: 1
-      outSlope: 1
-      tangentMode: 34
-      weightedMode: 0
-      inWeight: 0
-      outWeight: 0
-    - serializedVersion: 3
-      time: 1
-      value: 1
-      inSlope: 1
-      outSlope: 1
-      tangentMode: 34
-      weightedMode: 0
-      inWeight: 0
-      outWeight: 0
-    m_PreInfinity: 2
-    m_PostInfinity: 2
-    m_RotationOrder: 4
+  framesForCircle: 360
 --- !u!1 &170076733
 GameObject:
   m_ObjectHideFlags: 0
@@ -482,6 +430,59 @@ PrefabInstance:
       objectReference: {fileID: 2100000, guid: 07c90186d15a2134cb2d2d836af1661b, type: 2}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 4437cbe5e0437c44db88a26f19b4f133, type: 3}
+--- !u!1 &1387950257
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1387950258}
+  - component: {fileID: 1387950259}
+  m_Layer: 0
+  m_Name: BeanSpawner
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1387950258
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1387950257}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0.057255387, y: 1.504, z: -0.0021704137}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 6
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1387950259
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1387950257}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ebe40b333380a404eb608da68ec18410, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  beanPrefab: {fileID: 1082933008149214005, guid: a99fc70abb617014d88279c4e8a938a8,
+    type: 3}
+  beanCount: 800
+  timeBetweenSpawns: 0.2
+  beanColors:
+  - {r: 1, g: 0, b: 0, a: 1}
+  - {r: 0.2569139, g: 1, b: 0, a: 1}
+  - {r: 0.98929596, g: 1, b: 0, a: 1}
+  - {r: 0, g: 0.67700386, b: 1, a: 1}
+  - {r: 1, g: 0, b: 0.9614239, a: 1}
 --- !u!1 &2067961853
 GameObject:
   m_ObjectHideFlags: 0
